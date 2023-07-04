@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Mosha-Tempreture-converter</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <form id="TempCalc" onsubmit="calculateTemp(); return false">
+
+      <label for="temp">Tempreture you would like to convert.</label>
+      <br>
+      <input type="number" name="temp" id="temp">
+      <select name="temp_diff" id="temp_diff">
+        <option value="cel" class="opt">Celsius</option>
+        <option value="fah" class="opt">Fahrenhite</option>
+      </select>
+       <br>
+      <input type="submit" name="temp" id="temp">
+      <br>
+      <span id="resultContainer"></span>
+    </form>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
